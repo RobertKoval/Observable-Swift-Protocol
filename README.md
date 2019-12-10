@@ -12,7 +12,7 @@ class Player: NSObject, Observable, AVAudioPlayerDelegate {
 
 	var observers: [() -> PlayerObserver?] = []
 
-	func somethigIsChanged() {
+	func somethigChanged() {
 		send { $0.someMethod() }  // call someMethot on all available observers
 	}
 }
